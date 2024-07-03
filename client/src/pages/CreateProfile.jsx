@@ -61,7 +61,7 @@ const CreateProfile = () => {
     // console.log(fromState);
 
     axios
-      .post(`http://localhost:4500/api/v1/profile/create-profile`, fromState, {
+      .post(`http://localhost:4500/api/v1/user/create-profile`, fromState, {
         headers: { Authorization: `${token}` },
       })
       .then((response) => {
