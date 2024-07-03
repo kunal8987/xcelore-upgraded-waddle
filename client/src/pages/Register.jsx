@@ -48,7 +48,7 @@ export default function Register() {
           timer: 3000,
         });
 
-        navigate("/email-conformed");
+        navigate("/create-profile");
       })
       .catch((error) => {
         console.log(error);
