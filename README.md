@@ -15,7 +15,7 @@ The User Base Url:- /api/v1/user
 
 For The Auth Base Url :-/api/v1/auth
 
-AUTH Endpoints
+<H1>AUTH Endpoints </H1>
 <br/>
 
 1 Register user
