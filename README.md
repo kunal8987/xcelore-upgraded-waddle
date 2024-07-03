@@ -2,7 +2,25 @@
 
 User Management API Documentation
 
-<h1>Start The Local Server To Connect The Database In Server Folder To Front-End In Client Folder  </h1>
+<h1>Backend Tech Stack </h1>
+Node.js: Server-side JavaScript runtime environment.
+Express: Web application framework for Node.js.
+MongoDB: NoSQL database for storing user data.
+Mongoose: ODM (Object Data Modeling) library for MongoDB.
+JWT (JSON Web Tokens): Used for user authentication.
+bcrypt: Hashing library for securely storing passwords.
+<h1>Frontend Tech Stack</h1>
+React: JavaScript library for building user interfaces.
+Tailwind CSS: Utility-first CSS framework for styling.
+Context API: State management for sharing data across components.
+Axios: HTTP client for making API requests.
+<h1>Getting Started</h1>
+Clone this repository.
+Set up your MongoDB database.
+Install dependencies using npm install.
+Configure environment variables (e.g., JWT secret, MongoDB connection string).
+Run the backend server using npm run start.
+Navigate to the client directory and run the React app using npm start.
 
 <br/>
 
