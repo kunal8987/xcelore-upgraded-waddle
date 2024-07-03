@@ -22,7 +22,7 @@ const ProfileCard = ({
 
      axios
       .delete(
-        `http://localhost:4500/api/v1/user/delete-profile/${_id}`
+        `http://localhost:4500/api/v1/user/delete-profile/${_id}`,
        
         {
           headers: { Authorization: `${token}` },
