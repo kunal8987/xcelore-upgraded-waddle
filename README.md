@@ -34,7 +34,7 @@ Set up your MongoDB database.
 <br/>
 Install dependencies using npm install.
 <br/>
-Configure environment variables (e.g., JWT secret, MongoDB connection string).
+Configure environment variables (e.g., JWT secret, MongoDB connection string port ).
 <br/>
 Run the backend server using npm run start.
 <br/>
