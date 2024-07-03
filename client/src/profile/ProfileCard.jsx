@@ -27,17 +27,6 @@ const ProfileCard = ({
           </div>
 
           <div className="grid grid-cols-1 gap-1 p-3 even:bg-orange-300 sm:grid-cols-3 sm:gap-4">
-            <dt className="font-medium text-gray-900">Profile</dt>
-            <dd className="text-gray-900 font-bold sm:col-span-2">
-              <img
-                className="relative z-0 inline-block h-15 w-12 rounded-full ring-2 ring-white"
-                src={avatar}
-                alt="Profile"
-              />
-            </dd>
-          </div>
-
-          <div className="grid grid-cols-1 gap-1 p-3 even:bg-orange-300 sm:grid-cols-3 sm:gap-4">
             <dt className="font-medium text-gray-900">First Name</dt>
             <dd className="text-gray-900 font-bold sm:col-span-2">
               {firstName}
