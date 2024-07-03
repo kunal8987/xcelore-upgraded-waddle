@@ -6,23 +6,28 @@ import { AuthContext } from "../context/authContextProvider";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const { authState } = useContext(AuthContext);
+  const { authState } = useContext(AuthContext);
   let menuItems;
 
-  menuItems = [
-    {
-      name: "Create Profile",
-      href: "/create-profile",
-    },
-    {
-      name: "Profile",
-      href: "/profile",
-    },
-    {
-      name: "Home",
-      href: "/",
-    },
-  ];
+  if (authState.isAuth === true) {
+    menuItems = [
+      {
+        name: "Create Profile",
+        href: "/create-profile",
+      },
+      {
+        name: "Profile",
+        href: "/profile",
+      },
+    ];
+  } else {
+    menuItems = [
+      {
+        name: "Home",
+        href: "/",
+      },
+    ];
+  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

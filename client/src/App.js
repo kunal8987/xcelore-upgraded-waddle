@@ -1,10 +1,10 @@
 import Navbar from "./component/Navbar";
-
+import AllRoutes from "./component/AllRoutes";
 function App() {
   return (
     <div className="container mx-auto">
       <Navbar />
-      <h1 className="text-3xl font-bold">Hello world!</h1>
+      <AllRoutes />
     </div>
   );
 }
