@@ -17,6 +17,30 @@ const ProfileCard = ({
   dob,
   _id,
 }) => {
+
+  const handleDelete = (_id)=>{
+
+     axios
+      .delete(
+        `http://localhost:4500/api/v1/user/delete-profile/_id}`
+       
+        {
+          headers: { Authorization: `${token}` },
+        }
+      )
+      .then((response) => {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: response.data.message,
+          showConfirmButton: false,
+          timer: 3000,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
   return (
     <div className=" mt-5">
       <div className="flow-root rounded-lg border bg-[#E3E1D9] border-gray-500 py-3 shadow-sm">
@@ -93,7 +117,7 @@ const ProfileCard = ({
           <Link to={`/edit-profile/${_id}`}>Edit</Link>
         </button>
 
-        <button className="rounded-md block w-1/3 m-auto mt-3 md:mt-8 bg-black px-3 py-2 text-xl font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+        <button onClick = {handleDelete(_id)} className="rounded-md block w-1/3 m-auto mt-3 md:mt-8 bg-black px-3 py-2 text-xl font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
           Delete
         </button>
       </div>
